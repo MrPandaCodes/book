@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIB_ALEX</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>ALEX'S LIBRARY</header>
+    <button id="newbook">Add new book</button>
+    <div id="wrapper">
+        <div id="display"></div>
+        <div id="function">
+            <!--Inputs regarding book's details-->
+            <div>BOOK INFO</div>
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title">
+            </div>
+            <div>
+                <label for="stars">Score</label>
+                <input type="range" min="1" max="5" value="3" name="stars" id="stars">
+                <span id="score">? / 5</span>
+            </div>
+            <div>
+                <label for="pages">Pages</label>
+                <input type="number" min="0" name="pages" oninput="this.value=Math.abs(this.value)" id="pages">
+            </div>
+            <div>
+                <label for="text-body">About:</label>
+                <textarea type="text" name="text-body" id="text-body"></textarea>
+            </div>
+
+            <div>
+                <button type="submit" id="submit">SEND</button>
+                <button type="reset" id="reset">CLEAR</button>
+                <button type="button" id="exit">CLOSE</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
