@@ -104,20 +104,33 @@ This area will display the books added to the library
   justify-items: center;
   overflow: scroll;
 }
-
+.wrapperButtons {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+position: absolute;
+bottom: 2rem;
+}
 #display button {
-  background-image: url(icons/delete.png);
   width: 50px;
   height: 50px;
   background-color: #0cffe000;
   background-size: cover;
   filter: invert(71%) sepia(88%) saturate(381%) hue-rotate(114deg) brightness(88%) contrast(89%);
   border: none;
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
   display: block;
 }
+.buttonDeleteBook{
+  background-image: url(icons/delete.png);
+}
+.buttonReadBook{
+  background-image: url(icons/bookmark-outline.png);
+}
+.buttonReadBook.check{
+  background-image: url(icons/bookmark-check.png);
+}
+
+
 
 #display button:active {
   transform: scale(1.2);
